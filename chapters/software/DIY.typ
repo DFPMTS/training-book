@@ -40,6 +40,10 @@ Debian rootfs 可以在 #link("https://github.com/yuzibo/riscv32/")[这里] 找�
   如何让 NEMU 支持不定长译码？
 ]
 
+#question[如果你决定实现 C 扩展][
+  考虑以下情况：假设在取指时，一条 4 字节指令的后 2 字节发生了 page fault，`xepc` 和 `xtval` 分别应该存储什么值？
+]
+
 #question[SD 卡驱动程序][
 
 ]
