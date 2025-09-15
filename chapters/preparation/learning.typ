@@ -3,8 +3,14 @@
 
 #show: book-page.with(title: "理论学习")
 
+= Superscalar & Out-of-Order
 
-= 架构
+#figure(
+  image("../../pics/cpu-out-of-order.jpg", width: 70%),
+  caption: link(
+    "https://dl.acm.org/doi/fullHtml/10.5555/1080072.1080074",
+  )[Memory Ordering in Modern Microprocessors, Part I],
+)
 
 == 初步学习
 
@@ -53,16 +59,3 @@
   + 非压缩发射队列：\[#link("https://mazirui2001.github.io/Zircon-2024-Web/Zircon2024/experience/")[压缩vs非压缩]\] / \[#link("https://mazirui2001.github.io/Zircon-2024-Web/Zircon2024/core/issue/")[Zircon-2024的非压缩式发射队列]\]
   + 分组发射队列：\[#link("https://github.com/iFuProcessor/iFuMisc/tree/main/report")[iFuCore设计报告]\] / \[#link("https://github.com/iFuProcessor/iFuCore/blob/main/src/main/scala/backend/issue/IssueUnit.scala")[iFuCore的IssueUnit]\]
 
-= ISA
-
-== 热身活动
-
-RISC-V ISA的学习将伴随着我们扩展NEMU功能的过程。后续我们会有针对性的学习，现在只需要完成热身活动即可。
-
-请阅读手册，找出以下问题的答案：
-
-+ `sstatus`和`mstatus`寄存器的关系是什么？
-
-+ 在什么情况下，一条 `jal` / `jalr` 指令应当对RAS (Return Address Stack) 进行一次Push / Pop? （Hint：在实现ftrace时，就已经遇到过这个问题了）
-
-+ `Instruction Address Misaligned` 异常是由哪条指令触发的？ C扩展的加入对这个异常有什么影响？

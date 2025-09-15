@@ -52,3 +52,4 @@
 
 #link("https://github.com/OpenXiangShan/LibCheckpointAlpha")[https://github.com/OpenXiangShan/LibCheckpointAlpha]
 
+用途：在 Linux 启动完成后生成 checkpoint 供 npc 使用，跳过漫长的 Linux 启动流程。
