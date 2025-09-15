@@ -1,4 +1,5 @@
 #import "/book.typ": book-page
+#import "@preview/frame-it:1.2.0": *
 
 #show: book-page.with(title: "Introduction")
 
