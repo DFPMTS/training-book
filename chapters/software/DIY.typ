@@ -23,6 +23,8 @@
 
 #question[在 NEMU 上运行 Linux][
   你会遇到 Difftest 相关的问题，请仔细思考如何应对（Hint：注意中断相关的 CSR）。暂时不开启 Difftest 也是一种选择。
+
+  构建最小的Linux可以参考 #link("https://github.com/CmdBlockZQG/rvcore-mini-linux")[zqg同学的笔记]。
 ]
 
 
@@ -45,7 +47,7 @@ Debian rootfs 可以在 #link("https://github.com/yuzibo/riscv32/")[这里] 找�
 ]
 
 #question[SD 卡驱动程序][
-
+  参考 NEMU 中的文档，将 NEMU SD 卡驱动加入kernel。
 ]
 
 #question[浮点数？][

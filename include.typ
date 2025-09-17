@@ -2,8 +2,8 @@
 #import "@preview/frame-it:1.2.0": *
 
 
-#let (reading, feature, variant, question) = frames(
-  feature: ("Feature",),
+#let (reading, advice, variant, question) = frames(
+  advice: ("Advice", blue.lighten(50%)),
   // For each frame kind, you have to provide its supplement title to be displayed
   variant: ("Variant",),
   // You can provide a color or leave it out and it will be generated

@@ -16,8 +16,12 @@
     - #chapter("chapters/tools/tools.typ", section: "2.1")[工具]
     = Superscalar & Out-of-Order
     - #chapter("chapters/preparation/learning.typ", section: "3.1")[理论学习]
+    - #chapter("chapters/ooo/impl.typ", section: "3.2")[工程实现]
+    = 频率与IPC优化
+    - #chapter("chapters/optimization/freq.typ", section: "4.1")[频率]
+    - #chapter("chapters/optimization/ipc.typ", section: "4.2")[IPC]
     = 附录
-    - #chapter("chapters/appendix/nscscc.typ", section: "4.1")[龙芯杯学习资源]
+    - #chapter("chapters/appendix/nscscc.typ", section: "5.1")[龙芯杯学习资源]
   ],
 )
 

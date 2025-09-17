@@ -7,10 +7,24 @@
 
 = Linux
 
-== 指令集扩展
+== 缺失的一块
 
-#question[最小的ISA][
-  为了运行Linux操作系统，哪些指令集扩展是必须的？
+#reading[了解操作系统中的并发与互斥锁][
+  #link("https://jyywiki.cn/OS/2023/build/lect6.ipynb.html")[jyy's 操作系统：设计与实现 - 6. 并发控制基础]
+
+  #link("https://rcore-os.cn/rCore-Tutorial-Book-v3/chapter8/2lock.html")[rCore - 第八章：并发 - 互斥锁]
+]
+
+#question[单CPU系统也需要实现原子指令吗？][
+  请给出论证或反例。
+
+  如果你认为需要，请找出哪些 RISC-V 扩展提供了原子指令。
+]
+
+#question[为了运行Linux，哪些指令集扩展是必须实现的？][
+  这是一个开放式的问题，也不需要一个完全严谨的回答。
+
+  请 STFW 或#link("https://github.com/cnlohr/mini-rv32ima")[上手试试]，得出一个初步的答案。
 ]
 
 #question[Debian呢？][
