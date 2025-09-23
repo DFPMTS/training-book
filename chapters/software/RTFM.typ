@@ -70,11 +70,11 @@
 
 == 更多资料
 
-如果遇到了困难，可以阅读以下优秀文档：
+如果在实践过程中遇到阻碍，或希望对相关背景有更深入的了解，我们强烈推荐以下由社区贡献的优秀学习资料：
 
 - \[#link("https://www.bilibili.com/video/BV14tASeUEYn/")[NEMU启动Linux - 郭明轩 - 一生一芯双周分享会]\] / \[#link("https://github.com/Seeker0472/ysyx-linux")[分享会的 repo]\]
 
 - \[#link("https://github.com/CmdBlockZQG/rvcore-mini-linux")[
     CmdBlockZQG的最小 Linux 构建教程]\]
 
-感谢 gmx 和 zqg 两位同学的分享。
+感谢 郭明轩 和 CmdBlockZQG 两位同学的分享。
