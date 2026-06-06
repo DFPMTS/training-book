@@ -17,6 +17,12 @@
     = Superscalar & Out-of-Order
     - #chapter("chapters/preparation/learning.typ", section: "3.1")[理论学习]
     - #chapter("chapters/ooo/impl.typ", section: "3.2")[工程实现]
+    - #chapter("chapters/ooo/impl-tech.typ", section: "3.2.1")[技术选型]
+    - #chapter("chapters/ooo/impl-5stage.typ", section: "3.2.2")[五级流水基础]
+    - #chapter("chapters/ooo/impl-multi-issue.typ", section: "3.2.3")[多发射]
+    - #chapter("chapters/ooo/impl-scoreboard.typ", section: "3.2.4")[记分牌算法]
+    - #chapter("chapters/ooo/impl-tomasulo.typ", section: "3.2.5")[Tomasulo算法与流水级定义]
+    - #chapter("chapters/ooo/impl-optimization.typ", section: "3.2.6")[优化]
     = 频率与IPC优化
     - #chapter("chapters/optimization/freq.typ", section: "4.1")[频率]
     - #chapter("chapters/optimization/ipc.typ", section: "4.2")[IPC]
