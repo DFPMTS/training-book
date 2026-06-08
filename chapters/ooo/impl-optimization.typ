@@ -15,11 +15,11 @@
 如果存在则必须等到这个store完成，下一个store之前的所有load都可以乱序发射。
 可以将之前lsq的发射队列拆分成loadIssueQueue和storeIssueQueue，load发射检查是否年龄比storeIssueQueue最old的指令更old，如果是则可以发射
 
-这种结构的访存，我仍然是推荐采用流水线cache
+这种结构的访存，我仍然是推荐采用流水线 cache
 
-== 实现更强的cache 
+== 实现更强的 cache
 
-=== cache替换算法
+=== cache 替换算法
 
 == 实现更强的分支预测器
 
