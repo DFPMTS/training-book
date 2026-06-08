@@ -3,13 +3,13 @@
 
 
 #let (reading, advice, variant, question) = frames(
-  advice: ("Advice", blue.lighten(50%)),
+  advice: ("Advice", rgb("#dbeafe")),
   // For each frame kind, you have to provide its supplement title to be displayed
   variant: ("Variant",),
   // You can provide a color or leave it out and it will be generated
-  reading: ("Reading", orange.lighten(30%)),
+  reading: ("Reading", rgb("#fef3c7")),
   // You can add as many as you want
-  question: ("Question", red.lighten(50%)),
+  question: ("Question", rgb("#fde68a")),
 )
 // This is necessary. Don't forget this!
 #show: frame-style(styles.boxy)

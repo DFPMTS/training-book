@@ -69,6 +69,24 @@
   font-weight: 600;
   font-style: italic;
 }
+
+.content p {
+  line-height: 1.75;
+  margin-block: 0.78rem;
+}
+
+.content li {
+  margin-block: 0.18rem;
+}
+
+.content ul,
+.content ol {
+  margin-block: 0.85rem;
+}
+
+.content figure {
+  margin-block: 1.5rem;
+}
 ```
 
 /// The project function defines how your document looks.
