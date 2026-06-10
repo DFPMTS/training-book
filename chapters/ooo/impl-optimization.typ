@@ -18,6 +18,16 @@
 
 可以将之前 LSQ 的发射队列拆分成 loadIssueQueue 和 storeIssueQueue。load 发射时检查自己的年龄是否比 storeIssueQueue 中最 old 的指令更 old，如果是则可以发射。
 
+ LSQ 规则可以这样理解：
++ load queue 记录已经重命名结束、还没有发射的 load
++ store queue 记录已经重命名结束、还没有发射的 store
++ load 发射前，需要检查所有比自己更老的 store，如果更老的 store 地址未知，load 必须等待
++ load 在执行的时候需要检查，store流水线上的store：
+    + 如果更老的 store 地址已知且与 load 地址不同，load 可以不用考虑继续执行
+    + 如果地址相同，则 load 要么等待 store 数据，要么直接从 store queue 做 store-to-load forwarding
+
+所以乱序访存不是简单地让 load 随便提前，而是让 load 在确认不会破坏更老 store 语义时提前。这个检查越激进，性能越好；检查越保守，实现越简单。
+
 这种结构的访存，我仍然推荐采用流水线 cache。
 
 == 实现更强的 cache
